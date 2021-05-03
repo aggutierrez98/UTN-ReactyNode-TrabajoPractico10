@@ -48,6 +48,6 @@ app.post("/respuesta", function(req, res) {
     res.send(html);
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, () => {
     console.log('Example app listening on port 3000!');
 });
